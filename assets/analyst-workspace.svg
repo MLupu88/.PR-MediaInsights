@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">Media Insights analyst workspace</title>
+  <desc id="desc">A synthetic project dashboard with import health, competitor metrics, topic mix and an evidence-backed finding.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="7" stdDeviation="12" flood-color="#17233c" flood-opacity=".08"/></filter>
+    <style>text{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#17233c}.muted{fill:#737b8a}.cap{font-size:12px;font-weight:700;letter-spacing:.08em}.sm{font-size:13px}.body{font-size:15px}.label{font-size:16px;font-weight:650}.value{font-size:27px;font-weight:720}.h2{font-size:25px;font-weight:720}.card{fill:#fff;stroke:#e0e4ed;stroke-width:1.2}.line{stroke:#e8eaf0}.axis{font-size:12px;fill:#858c99}</style>
+  </defs>
+  <rect width="1440" height="900" rx="26" fill="#f5f7fb"/>
+  <rect x="0" y="0" width="1440" height="70" rx="26" fill="#fff"/><rect x="0" y="45" width="1440" height="25" fill="#fff"/><path d="M0 70H1440" stroke="#dfe3eb"/>
+  <rect x="54" y="21" width="30" height="30" rx="9" fill="#5b72e6"/><path d="M63 39l6-10 6 10-6 10z" fill="#fff"/>
+  <text x="98" y="41" font-size="17" font-weight="720">Media Insights</text><text x="1278" y="41" class="body muted">Portfolio demo</text>
+
+  <text x="54" y="112" class="sm muted">Projects  /  Northstar Market  /  Q2 2026</text>
+  <text x="54" y="158" class="h2">Northstar Market · Q2 2026</text><rect x="1245" y="127" width="140" height="35" rx="17" fill="#dff4eb"/><circle cx="1265" cy="144" r="5" fill="#2f8a70"/><text x="1279" y="150" class="cap" fill="#27745f">READY</text>
+  <text x="54" y="190" class="body muted">6 workbooks · updated 18 Jul 2026</text>
+
+  <g transform="translate(54 223)">
+    <text x="0" y="0" class="label" fill="#5b72e6">Overview</text><text x="96" y="0" class="label muted">Files</text><text x="165" y="0" class="label muted">Classification</text><text x="300" y="0" class="label muted">Review</text><text x="385" y="0" class="label muted">Analytics</text><text x="485" y="0" class="label muted">Compare</text><text x="580" y="0" class="label muted">Insights</text><text x="670" y="0" class="label muted">Chat</text>
+    <rect x="0" y="15" width="68" height="3" rx="1.5" fill="#5b72e6"/><path d="M0 18H1332" stroke="#dfe3eb"/>
+  </g>
+
+  <g filter="url(#s)">
+    <rect class="card" x="54" y="277" width="1332" height="112" rx="14"/>
+  </g>
+  <g transform="translate(78 306)">
+    <text class="cap muted">SOURCE FILES</text><text y="44" class="value">6</text><path d="M177 0V60" class="line"/>
+    <text x="205" class="cap muted">TOTAL ROWS</text><text x="205" y="44" class="value">23,418</text><path d="M404 0V60" class="line"/>
+    <text x="432" class="cap muted">VALID</text><text x="432" y="44" class="value">23,327</text><path d="M620 0V60" class="line"/>
+    <text x="648" class="cap muted">UNKNOWN</text><text x="648" y="44" class="value">91</text><path d="M836 0V60" class="line"/>
+    <text x="864" class="cap muted">DUPLICATES</text><text x="864" y="44" class="value">312</text><path d="M1060 0V60" class="line"/>
+    <text x="1088" class="cap muted">CLASSIFIED</text><text x="1088" y="44" class="value">23,015</text>
+  </g>
+
+  <g filter="url(#s)"><rect class="card" x="54" y="419" width="780" height="426" rx="14"/></g>
+  <text x="82" y="459" class="label">Brand and competitor performance</text><text x="82" y="483" class="sm muted">Share of Voice is based on article volume. Reach is shown separately.</text>
+  <g transform="translate(82 519)">
+    <text class="cap muted">BRAND</text><text x="190" class="cap muted">ARTICLES</text><text x="310" class="cap muted">SOV</text><text x="402" class="cap muted">REACH</text><text x="552" class="cap muted">AVG</text><text x="652" class="cap muted">MEDIAN</text>
+    <path d="M0 23H724" class="line"/>
+    <g transform="translate(0 58)"><circle cx="5" cy="-5" r="5" fill="#5b72e6"/><text x="18" class="label">Northstar</text><text x="190" class="body">5,709</text><text x="310" class="label">24.8%</text><text x="402" class="body">54.6M</text><text x="552" class="body">9,564</text><text x="652" class="body">740</text></g>
+    <path d="M0 83H724" class="line"/>
+    <g transform="translate(0 118)"><circle cx="5" cy="-5" r="5" fill="#64b7b0"/><text x="18" class="label">Greenline</text><text x="190" class="body">4,696</text><text x="310" class="label">20.4%</text><text x="402" class="body">47.1M</text><text x="552" class="body">10,030</text><text x="652" class="body">610</text></g>
+    <path d="M0 143H724" class="line"/>
+    <g transform="translate(0 178)"><circle cx="5" cy="-5" r="5" fill="#e66d50"/><text x="18" class="label">Harbor &amp; Pine</text><text x="190" class="body">3,590</text><text x="310" class="label">15.6%</text><text x="402" class="body">63.4M</text><text x="552" class="body">17,660</text><text x="652" class="body">880</text></g>
+    <path d="M0 203H724" class="line"/>
+    <g transform="translate(0 238)"><circle cx="5" cy="-5" r="5" fill="#aeb6c6"/><text x="18" class="label">Market Square</text><text x="190" class="body">3,296</text><text x="310" class="label">14.3%</text><text x="402" class="body">39.8M</text><text x="552" class="body">12,075</text><text x="652" class="body">530</text></g>
+    <path d="M0 263H724" class="line"/>
+    <g transform="translate(0 298)"><circle cx="5" cy="-5" r="5" fill="#ccd1dc"/><text x="18" class="label">Field &amp; Fork</text><text x="190" class="body">2,945</text><text x="310" class="label">12.8%</text><text x="402" class="body">28.5M</text><text x="552" class="body">9,678</text><text x="652" class="body">460</text></g>
+    <path d="M0 323H724" class="line"/>
+  </g>
+  <rect x="82" y="790" width="724" height="32" rx="8" fill="#f1f3fb"/><text x="98" y="811" class="sm" fill="#5b72e6">Northstar gained 3.2 Share of Voice points while maintaining the second-highest median reach.</text>
+
+  <g filter="url(#s)"><rect class="card" x="862" y="419" width="524" height="215" rx="14"/></g>
+  <text x="890" y="459" class="label">Coverage mix</text><text x="890" y="483" class="sm muted">Primary topic · Northstar Market</text>
+  <g transform="translate(890 518)">
+    <text class="sm">Community</text><rect x="125" y="-14" width="330" height="16" rx="5" fill="#eef0f6"/><rect x="125" y="-14" width="256" height="16" rx="5" fill="#5b72e6"/><text x="465" class="sm muted">31%</text>
+    <text y="38" class="sm">Expansion</text><rect x="125" y="24" width="330" height="16" rx="5" fill="#eef0f6"/><rect x="125" y="24" width="173" height="16" rx="5" fill="#64b7b0"/><text x="465" y="38" class="sm muted">21%</text>
+    <text y="76" class="sm">Pricing</text><rect x="125" y="62" width="330" height="16" rx="5" fill="#eef0f6"/><rect x="125" y="62" width="124" height="16" rx="5" fill="#e66d50"/><text x="465" y="76" class="sm muted">15%</text>
+    <text y="114" class="sm">Other</text><rect x="125" y="100" width="330" height="16" rx="5" fill="#eef0f6"/><rect x="125" y="100" width="99" height="16" rx="5" fill="#aeb6c6"/><text x="465" y="114" class="sm muted">12%</text>
+  </g>
+
+  <g filter="url(#s)"><rect class="card" x="862" y="662" width="524" height="183" rx="14"/></g>
+  <rect x="890" y="690" width="82" height="24" rx="12" fill="#e4e8fb"/><text x="931" y="706" text-anchor="middle" font-size="11" font-weight="750" fill="#5b72e6">SUPPORTED</text>
+  <text x="890" y="746" class="label">Community coverage explains most of the gain.</text>
+  <text x="890" y="774" class="body muted">The topic contributed 43% of Northstar's new visibility</text><text x="890" y="798" class="body muted">and is supported by 14 reviewed articles.</text>
+  <text x="890" y="825" class="sm" fill="#5b72e6">View evidence  →</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="720" viewBox="0 0 1440 720" role="img" aria-labelledby="title desc">
+  <title id="title">Quarterly media performance comparison</title>
+  <desc id="desc">A synthetic comparison between Q1 and Q2 showing Share of Voice growth, reach change, rank movement and the topics behind the difference.</desc>
+  <defs>
+    <filter id="sh" x="-10%" y="-15%" width="120%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="13" flood-color="#17233c" flood-opacity=".08"/></filter>
+    <style>text{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#17233c}.muted{fill:#747c8b}.cap{font-size:12px;font-weight:750;letter-spacing:.09em}.sm{font-size:13px}.body{font-size:15px}.label{font-size:17px;font-weight:680}.metric{font-size:31px;font-weight:740}.head{font-size:26px;font-weight:730}.card{fill:#fff;stroke:#dfe3eb;stroke-width:1.2}.grid{stroke:#e7eaf1;stroke-width:1}</style>
+  </defs>
+  <rect width="1440" height="720" rx="26" fill="#f5f7fb"/>
+  <text x="56" y="58" class="cap" fill="#5b72e6">COMPARE PROJECTS</text><text x="56" y="99" class="head">What changed, how much, and what was behind it?</text><text x="56" y="129" class="body muted">Northstar Market · Q1 2026 compared with Q2 2026 · synthetic portfolio data</text>
+
+  <g filter="url(#sh)"><rect class="card" x="56" y="166" width="1328" height="142" rx="17"/></g>
+  <g transform="translate(84 193)">
+    <text class="cap muted">SHARE OF VOICE</text><text y="47" class="metric">21.6% → 24.8%</text><text y="78" class="label" fill="#2f8a70">+3.2 pts</text><path d="M286 0V89" class="grid"/>
+    <text x="320" class="cap muted">TOTAL REACH</text><text x="320" y="47" class="metric">48.2M → 54.6M</text><text x="320" y="78" class="label" fill="#2f8a70">+13.3%</text><path d="M604 0V89" class="grid"/>
+    <text x="638" class="cap muted">VOLUME RANK</text><text x="638" y="47" class="metric">#3 → #1</text><text x="638" y="78" class="label" fill="#2f8a70">up 2 places</text><path d="M870 0V89" class="grid"/>
+    <text x="904" class="cap muted">MEDIAN REACH</text><text x="904" y="47" class="metric">710 → 740</text><text x="904" y="78" class="label" fill="#2f8a70">+4.2%</text>
+  </g>
+
+  <g filter="url(#sh)"><rect class="card" x="56" y="338" width="795" height="326" rx="17"/></g>
+  <text x="84" y="378" class="label">Where the additional visibility came from</text><text x="84" y="402" class="sm muted">Contribution to Northstar's net article gain</text>
+  <g transform="translate(84 445)">
+    <path d="M126 0V170M246 0V170M366 0V170M486 0V170M606 0V170" class="grid"/>
+    <text y="18" class="body">Community</text><rect x="126" y="2" width="493" height="23" rx="6" fill="#e9ecf8"/><rect x="126" y="2" width="414" height="23" rx="6" fill="#5b72e6"/><text x="555" y="19" class="sm" fill="#5b72e6">+319</text>
+    <text y="61" class="body">Expansion</text><rect x="126" y="45" width="493" height="23" rx="6" fill="#e9ecf8"/><rect x="126" y="45" width="212" height="23" rx="6" fill="#64b7b0"/><text x="353" y="62" class="sm" fill="#3f928c">+164</text>
+    <text y="104" class="body">Pricing</text><rect x="126" y="88" width="493" height="23" rx="6" fill="#e9ecf8"/><rect x="126" y="88" width="130" height="23" rx="6" fill="#e66d50"/><text x="271" y="105" class="sm" fill="#be513a">+101</text>
+    <text y="147" class="body">All other</text><rect x="126" y="131" width="493" height="23" rx="6" fill="#e9ecf8"/><rect x="126" y="131" width="204" height="23" rx="6" fill="#aeb6c6"/><text x="345" y="148" class="sm muted">+158</text>
+    <text x="126" y="188" class="sm muted">0</text><text x="246" y="188" class="sm muted">100</text><text x="366" y="188" class="sm muted">200</text><text x="486" y="188" class="sm muted">300</text><text x="606" y="188" class="sm muted">400</text>
+  </g>
+
+  <g filter="url(#sh)"><rect class="card" x="879" y="338" width="505" height="326" rx="17"/></g>
+  <rect x="907" y="368" width="97" height="25" rx="12" fill="#e4e8fb"/><text x="956" y="385" text-anchor="middle" font-size="11" font-weight="750" fill="#5b72e6">SUPPORTED</text>
+  <text x="907" y="432" font-size="21" font-weight="700">The gain was concentrated,</text><text x="907" y="460" font-size="21" font-weight="700">not broad-based.</text>
+  <text x="907" y="500" class="body muted">Community initiatives generated 43% of the</text><text x="907" y="525" class="body muted">additional visibility. Expansion announcements</text><text x="907" y="550" class="body muted">accounted for another 22%.</text>
+  <path d="M907 578H1356" class="grid"/>
+  <text x="907" y="608" class="cap muted">EVIDENCE</text><text x="1000" y="608" class="body">6 metrics · 14 reviewed articles</text>
+  <text x="907" y="637" class="sm" fill="#5b72e6">Inspect supporting records  →</text>
+</svg>
