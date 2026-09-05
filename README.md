@@ -2,163 +2,100 @@
 
 # Media Insights
 
-### From messy media coverage to a report you can defend.
+### Thousands of articles. One place to make sense of them.
 
-Media Insights is a reporting workspace for PR and communications teams. It turns large, inconsistent media-monitoring workbooks into a repeatable analysis: clean coverage, comparable performance, evidence-backed conclusions and client-ready reports.
-
-<br />
-
-<img src="assets/hero-workflow.svg" alt="Media Insights turns imported workbooks into a trusted dataset, supported findings and presentation-ready outputs" width="100%" />
+Media Insights helps PR teams turn media-monitoring spreadsheets into performance reports. Import the coverage, compare brands and periods, ask questions about the results, and export the analysis to PowerPoint or Excel.
 
 <br />
 
-`PR & communications` &nbsp;·&nbsp; `Product case study` &nbsp;·&nbsp; `Synthetic examples`
+<img src="assets/hero-workflow.svg" alt="Coverage workbooks become a clean dataset, answers about performance and PowerPoint or Excel reports" width="100%" />
 
 </div>
 
-## The problem was never just making charts
+## The spreadsheet is only the beginning
 
-A media report may begin as several Excel files and end as a polished presentation, but there is a surprising amount of fragile work between those two points. Column names vary. Company names are missing or inconsistent. The same article appears more than once. Reach figures need a consistent definition. A mention is not necessarily the subject of the story. Then someone still has to explain what changed, find the articles that support that conclusion and rebuild the same analysis in a deck.
+You have the quarter’s media coverage. Now you need to work out how the brand performed, what competitors did differently and what to recommend next. Before you get there, someone has to untangle the files, check repeated articles, fix inconsistent labels and make sure the numbers add up. Then comes the presentation.
 
-For recurring reporting, the useful question is how to preserve the dataset, calculation rules and evidence between reporting cycles. A conversation is one part of that workflow; the application keeps the underlying work organized.
+I built Media Insights to keep that work together, from the first upload to the report a client or communications lead receives.
 
-The product begins after coverage has been collected by a monitoring provider. It is not a crawler or a social-listening clone. Its job is to turn exported coverage into a trustworthy piece of analysis and then into the report that a client or communications lead can actually use.
+## Bring in the coverage and get to work
 
-Media Insights was built around the full analyst workflow:
+Upload multiple Excel workbooks into a reporting project. The app recognizes supported column names, checks the rows, flags duplicates and organizes articles by brand. It keeps the original values and available source links so you can go back and inspect a record.
 
-<table>
-  <tr>
-    <td><strong>01 · Collect</strong><br />Bring multiple monitoring workbooks into one reporting project.</td>
-    <td><strong>02 · Clean</strong><br />Validate rows, normalize fields and preserve missing values.</td>
-    <td><strong>03 · Organize</strong><br />Resolve brands, flag duplicates and classify coverage.</td>
-  </tr>
-  <tr>
-    <td><strong>04 · Analyze</strong><br />Calculate volume, reach, Share of Voice and topic mix consistently.</td>
-    <td><strong>05 · Explain</strong><br />Ask questions and draft conclusions from controlled project data.</td>
-    <td><strong>06 · Report</strong><br />Export the enriched workbook or build a presentation-ready report.</td>
-  </tr>
-</table>
+From there, you can see which brands received coverage, how much reach they had, what topics appeared and whether a brand was the focus of an article or just mentioned in passing.
 
-*Visuals below are portfolio illustrations of implemented workflows, using fictional data and independent styling. They are not captures of the live application.*
+<img src="assets/analyst-workspace.svg" alt="Brand comparison with article counts, Share of Voice, reach and topic mix" width="100%" />
 
-## One project keeps the entire reporting context together
+*All visuals use fictional data and independent styling. They illustrate the app’s workflows; they are not screenshots of the live product.*
 
-The workspace is organized around a reporting period, not a chat session. Source files, normalized records, duplicate decisions, classifications, metrics, generated insights and conversations all remain attached to the same project.
+## Spend time on the rows that need a second look
 
-<img src="assets/analyst-workspace.svg" alt="Illustrative Analytics view showing brand performance, reach and topic mix" width="100%" />
+Repeated articles should not inflate the report. Missing reach should stay missing. A confident-looking label should still be open to correction.
 
-The analyst can see whether the project is actually ready before trusting its charts: how many files were imported, how many rows are valid, which records are duplicates and whether the remaining coverage has been classified. That status is part of the product, not a preprocessing detail hidden behind the dashboard.
+The app identifies duplicate records and excludes them from the analysis. AI classifies topics, sentiment and the brand’s role in each article, while low-confidence results go into a review queue. You can correct labels and brand assignments without losing the original record.
 
-## Clean the records, then review the interpretation
+<img src="assets/import-review.svg" alt="Import totals, duplicate records and a classification awaiting review" width="100%" />
 
-The importer recognizes supported English and Romanian column names and preserves original row numbers, raw values and available article links. Brand assignment records how it was resolved, including explicit fields, trusted file mappings, inference and manual corrections. Uncertain assignments remain visible for review.
+Higher-confidence classifications can be approved automatically. That status does not mean a person has reviewed them.
 
-Duplicates are resolved with deterministic fingerprints: one record becomes canonical and repeated rows point back to it. Import and correction use the same rule, and analytics exclude duplicates from the reporting population. This is record deduplication; related stories are analyzed separately through story clusters.
+## Find out what changed
 
-<img src="assets/import-review.svg" alt="Illustration of source normalization, canonical duplicate records and classification review" width="100%" />
+More articles do not always mean better visibility. A competitor might publish less often but reach more people, while your brand appears frequently as a passing mention.
 
-Classification covers primary and secondary topics, communication category, sentiment and brand role. Low-confidence classifications enter a review queue; higher-confidence results can start in the approved state automatically. Analysts can correct labels or flag them for review. An approved classification therefore does not, by itself, prove that a person reviewed it.
+Compare brands within a period, one quarter against another, or the same quarter across years. You can also combine quarterly projects into half-year and full-year views, with repeated coverage excluded across projects.
 
-## An insight should come with evidence
+<img src="assets/period-comparison.svg" alt="Quarterly changes in Share of Voice, reach and median reach" width="100%" />
 
-Generated insights are checked against the immutable data snapshot captured for that generation. The application checks cited metric paths and values, known entities, article IDs and source URLs. Rejected candidates are retained with rejection reasons instead of silently disappearing.
+The comparison brings together volume, Share of Voice, reach, sentiment and topic mix. It also shows which publications and stories moved up or down, helping you decide where to look before writing the conclusion.
 
-<img src="assets/evidence-chain.svg" alt="An illustrative interpretation grounded in calculated Share of Voice and article evidence, with system validation distinguished from human review" width="100%" />
+## Ask the data a question
 
-| Layer | What the application preserves or checks |
-|---|---|
-| Source records | Original values, source file, row number and available links |
-| Normalized articles | Parsed fields, assignment provenance and explicit missing values |
-| Duplicate state | Canonical record and links from duplicate rows |
-| Calculated metrics | Defined populations and deterministic calculations |
-| Classifications | Model labels, confidence and review/correction status |
-| Generated insights | Evidence references, snapshot, validation result and caveats |
-| Reports | Filtered analytics and eligible validated interpretations or recommendations |
+“Which brand gained Share of Voice?” is a useful starting point. “Show me its community coverage and the source articles” gets you closer to understanding why.
 
-**System validation checks the references; it does not certify that an interpretation is correct.** Analysts still decide whether a conclusion is persuasive and what to recommend. The product does not provide a separate human sign-off state for narrative insights.
+Chat works with the project or comparison you are looking at. It can retrieve metrics, topics, sentiment, publications, stories and articles, then include the supporting numbers and available links in its answer.
 
-## Why this instead of Claude?
+<img src="assets/grounded-chat.svg" alt="A chat answer showing Northstar’s Share of Voice and the numbers behind it" width="100%" />
 
-The reason to build Media Insights was the work around the conversation: importing large coverage datasets, keeping reporting periods organized, applying consistent definitions, retaining corrections and generating the next report without reconstructing the context from scratch.
+### Why build an app instead of just using Claude?
 
-For coverage sets containing tens of thousands of article records, the project data lives in a database. A model receives the bounded evidence or query result it needs for a task, rather than being expected to remember the entire dataset. That is the useful distinction here: a persistent reporting application with a conversational interface, designed around the analyst's recurring work.
+Because the work continues after the conversation. With tens of thousands of article records, I wanted the files, corrections, calculations and reporting periods to stay together, ready for the next question or the next report.
 
-<img src="assets/grounded-chat.svg" alt="Illustrative Chat view answering a brand Share of Voice question with a calculated metric and a follow-up source article query" width="100%" />
+The database keeps the coverage. The app calculates the metrics. The model gets the relevant results through a fixed set of query tools. It does not have to remember the entire dataset, and the analyst does not have to keep moving it between spreadsheets, chats and slides.
 
-Chat works over individual projects and comparison scopes. Its fixed tools retrieve KPIs, brand performance, topics, sentiment, publications, story clusters, articles, period comparisons and validated insights. The model supplies validated parameters; the application determines the allowed project scope. The model cannot supply arbitrary SQL or choose a different project's ID.
+## Turn the findings into a recommendation
 
-Answers can include supporting metrics, article IDs and available source links. This helps an analyst move from “which brand gained visibility?” to the coverage worth inspecting, without moving the dataset between tools.
+Media Insights can draft summaries, findings, risks and recommendations from the analysis. Those drafts include references to supporting metrics and articles, which the app checks against the data used to generate them.
 
-## Comparison is where reporting becomes useful
+<img src="assets/evidence-chain.svg" alt="A draft finding with its supporting Share of Voice calculation and source article" width="100%" />
 
-Compare individual quarters, the same quarter across years, or groups of projects. Selecting Q1 + Q2, Q3 + Q4, or all four quarters of one year forms H1, H2 or full-year views, with articles deduplicated across projects. The same project can appear on both sides to compare selected brands within one period.
+Checking a reference does not make a conclusion correct. The analyst still needs to decide whether the explanation holds up and what to recommend. The app keeps rejected drafts and their reasons, and it does not treat a system check as human sign-off.
 
-Each side can have its own brand and source-file selection. The comparison includes KPI deltas, Share of Voice and reach-share changes, rankings, new entrants and dropouts, topic/category shifts, sentiment and brand role. Publication and story concentration show how much coverage depends on a few sources or stories; rank movement and entry/exit counts describe ranking volatility.
+## Get the report out
 
-<img src="assets/period-comparison.svg" alt="Synthetic quarterly comparison showing Share of Voice, reach and median-reach changes alongside supported comparison scopes" width="100%" />
+Both project and comparison reports export to **PowerPoint and Excel**. PowerPoint carries the analysis into a presentation; Excel provides the ranked results and article details for closer inspection or handoff.
 
-Volume, reach and Share of Voice answer different questions. Showing them together helps an analyst distinguish more mentions from a larger share of coverage, then inspect the topic mix and stories before proposing a next step.
+<img src="assets/report-outputs.svg" alt="Illustrative PowerPoint report and Excel workbook showing the findings and article details" width="100%" />
 
-## The analysis leaves the system in useful forms
+Reports can include generated interpretations and recommendations that pass the app’s checks, with labels showing what they are. Chat replies are not added automatically. The aim is to carry the analysis into the final report without rebuilding it by hand.
 
-Both project and comparison analyses can leave the application as Excel workbooks and PowerPoint reports. Excel carries ranked analysis and article details, including available URLs, for inspection and handoff. PowerPoint presents the findings in a defined slide structure. The illustration below uses independent styling; it is not an exported operational template.
+## A few things worth knowing
 
-Reports include eligible system-validated interpretations and recommendations, clearly labelled. Chat answers are not included automatically. Each export reads a stable database snapshot; separate Excel and PowerPoint requests can differ if the underlying data changes between them.
+This is a working app built for a defined retail reporting scope and supported `.xlsx` monitoring exports. It starts with coverage someone has already collected. It does not collect articles from the web or accept every spreadsheet format.
 
-<img src="assets/report-outputs.svg" alt="Illustrative PowerPoint and Excel outputs from project analytics" width="100%" />
+AI helps classify coverage, draft explanations and answer questions. The application handles validation, duplicate rules and calculations. For a closer look at those choices, see the [implementation notes](IMPLEMENTATION.md).
 
-That output layer removes a particularly expensive kind of repetition: recalculating or reinterpreting the analysis while transferring it into the format a client or leadership team will actually receive.
-
-## What exists today
-
-| Analyst task | Implemented capability |
-|---|---|
-| Import monitoring exports | Multiple `.xlsx` files, supported header normalization, validation and source provenance |
-| Resolve data issues | Trusted brand mappings, manual corrections, deterministic deduplication and review queues |
-| Organize coverage | Primary/secondary topic, category, sentiment, brand role and story clusters |
-| Measure performance | Volume, volume-based Share of Voice, reach/share, average/median reach, missing-reach counts and duplicate share |
-| Inspect visibility | Publication and story rankings, concentration, topic mix and low-confidence results |
-| Compare periods or brands | Quarter, year-over-year and derived H1/H2/full-year views, per-side brand/file filters, deltas and ranking movement |
-| Develop the report narrative | Executive summaries, findings, risks, opportunities, recommendations and methodology caveats, checked against stored evidence |
-| Ask follow-up questions | Project/comparison chat through nine fixed query tools |
-| Deliver the analysis | Project/comparison PowerPoint and Excel exports with consistent definitions and explicit output bounds |
-
-The current implementation is tailored to a defined retail reporting scope and supported monitoring workbook formats. It is an internal working application, not a claim of arbitrary-file support or a general-purpose enterprise platform. Article records can include an author field; that alone should not be confused with a dedicated journalist-analysis product.
-
-## Where AI helps, and where it stops
-
-AI is used for interpretation-heavy work: classifying article meaning, drafting narrative insights and understanding an analyst's question. It is deliberately not the authority for row validation, duplicate state, metric definitions or arithmetic.
-
-| AI is useful for | The application remains responsible for |
-|---|---|
-| Interpreting what an article is mainly about | Preserving the uploaded record |
-| Assigning reviewable topic and category labels | Cleaning and normalizing fields |
-| Turning calculated metrics into a first narrative draft | Calculating every reporting metric |
-| Translating a natural-language question into a controlled query | Restricting the available query surface |
-| Explaining an answer in plain language | Returning the evidence behind the answer |
-
-That boundary matters when the result will become a client recommendation: calculations need to remain repeatable, and interpretations need to remain open to review.
-
-## Inside the implementation
-
-The operational stack is Python/FastAPI, PostgreSQL with SQLAlchemy and Alembic, Jinja2 templates and Tailwind CSS. Deterministic services handle ingestion, normalization, analytics, comparisons and report generation. DeepSeek is used through n8n for classification and language tasks, with authenticated callbacks into the application. Separate generators produce enriched `.xlsx` and `.pptx` outputs.
-
-The evidence boundary is implemented through fixed query tools, immutable narrative snapshots and deterministic validators. Report builders share a data-mapping layer and use a read-only repeatable-read transaction for each export.
-
-The repository includes tests for imports, review, deduplication, analytics, comparisons, chat scope/security, narrative validation and both export formats. This case study was checked against source and test structure; it does not claim a new test run or a production benchmark.
+The stack is Python/FastAPI, PostgreSQL, Jinja2 and Tailwind CSS, with DeepSeek through n8n for language tasks. The operational repository includes tests for importing, analysis, comparisons, chat and exports. This public repository contains the case study and synthetic visuals.
 
 ## Why I built it
 
-I work in product marketing, where it is easy to have confident opinions about what a technical product should do while remaining comfortably far away from the decisions that make it trustworthy.
+I work in product marketing, and building products is how I get past having opinions about features I have never had to make work.
 
-Media Insights started with a simple question: could I remove the repetitive work between receiving media-monitoring spreadsheets and producing a useful performance report? Building it made the harder questions unavoidable. What counts as the same article? Is missing reach really zero? When is a brand the subject of a story rather than merely mentioned? Which conclusions can be generated, and which still require an analyst to make the call? How do you let someone talk to a large dataset without letting the model invent its own version of it?
+This started with a practical question: could I spend less time moving media coverage between spreadsheets and presentations? Building it led to harder questions. What counts as the same article? What should happen when reach is missing? How much of a conclusion can you automate before you are just making a guess sound convincing?
 
-“Marketer who can code” is not the interesting part. The useful part is getting close enough to the system that data choices, product trade-offs, UX decisions and positioning stop being abstract.
+That is why this project belongs in my portfolio. Getting close to the data, the interface and the implementation makes me better at deciding what a product should do and explaining why someone would use it.
 
 **Understanding the system makes the product story better. Building the system makes the opinions harder to fake.**
 
 ---
 
-### About this repository
-
-This is a public portfolio case study, not the operational source repository. All companies, publications, filenames, article examples, dates, metrics and conclusions shown here are synthetic. No client data, production configuration, internal URLs, credentials, employer branding or proprietary presentation templates are included.
+All companies, publications, articles, filenames, dates and figures in these examples are fictional. Operational code, client data, employer branding and presentation templates are excluded.
